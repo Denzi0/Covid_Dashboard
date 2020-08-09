@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="covidStats">Statistics</h3>
+
+      <div class="covid-switch">
+        <a href="" class="covid-city">My City</a>
+        <a href="barangay.html" class="covid-barangay">Barangay</a>
+      </div>
+
+      <ul class="covid-daily">
+        <li><a href="">Total</a></li>
+        <li><a href="">Today</a></li>
+        <li><a href="">Yesterday</a></li>
+      </ul>
+
+      <div class="covid-box">
+        <div class="box covid-affected">
+          <h3>Affected</h3>
+          <h2>140</h2>
+        </div>
+        <div class="box covid-deaths">
+          <h3>Death</h3>
+          <h2>140</h2>
+        </div>
+      </div>
+      <div class="covid-box">
+        <div class="box covid-recovered">
+          <h3>Recovered</h3>
+          <h2>140</h2>
+        </div>
+        <div class="box covid-active">
+          <h3>Active</h3>
+          <h2>140</h2>
+        </div>
+        <div class="box covid-serious">
+          <h3>Serious</h3>
+          <h2>140</h2>
+        </div>
+      </div>
+      <h3 class="covidStats">Daily New Cases</h3>
+      <canvas id="myChart"></canvas>
+    </div>
+    <script>
+      var ctx = document.getElementById('myChart').getContext('2d')
+      var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+          labels: [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+          ],
+          datasets: [
+            {
+              label: 'Covid Cases',
+              backgroundColor: '#d33737',
+              borderColor: '#d33737',
+              data: [0, 10, 5, 2, 20, 30, 45],
+            },
+          ],
+        },
+
+        // Configuration options go here
+        options: {},
+      })
+    </script>
+  </body>
+</html>

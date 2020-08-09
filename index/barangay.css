@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-family: Lato, sans-serif;
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  height: 100vh;
+  padding: 10px;
+}
+.barangayStats {
+  padding: 20px 0;
+}
+.barangayStats h3 {
+  font-size: 20px;
+}
+.barangay-switch {
+  border-radius: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #c2c2c2;
+}
+.barangay-city {
+  padding: 10px 60px;
+  color: #fff !important;
+  width: 50%;
+}
+.barangay-barangay {
+  width: 50%;
+  padding: 10px 50px;
+  background-color: #fff;
+}
+.barangay-switch a {
+  color: #606060;
+}
+.barangay-cases {
+  color: #eeeeee;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #c2c2c2;
+  width: 200px;
+  border-radius: 20px;
+}
+.barangay-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+.barangay-table tr:nth-child(even) {
+  background-color: #ddd;
+}
+.barangay-table tr td {
+  padding: 10px;
+}

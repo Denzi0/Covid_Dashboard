@@ -1,0 +1,102 @@
+/* Dashboard */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-family: Lato, sans-serif;
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  height: 100vh;
+  padding: 10px;
+}
+.covidStats {
+  padding: 20px 0;
+}
+.covidStats h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.covid-daily {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+.covid-daily li a {
+  color: #606060;
+}
+.covid-daily h3 {
+  font-weight: 400;
+}
+.covid-switch {
+  border-radius: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #c2c2c2;
+}
+.covid-city {
+  width: 50%;
+  padding: 10px 50px;
+  background-color: #fff;
+}
+.covid-barangay {
+  padding: 10px 60px;
+  color: #fff !important;
+  width: 50%;
+}
+.covid-switch a {
+  color: #606060;
+}
+.box {
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box h3 {
+  font-weight: 100;
+  font-size: 20px;
+}
+.box h2 {
+  font-weight: 400;
+}
+.covid-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.covid-affected,
+.covid-deaths {
+  width: 160px;
+  height: 90px;
+}
+.covid-recovered,
+.covid-active,
+.covid-serious {
+  width: 105px;
+  height: 90px;
+}
+.covid-affected {
+  background-color: #ff9234;
+}
+.covid-deaths {
+  background-color: #d33737;
+}
+.covid-recovered {
+  background-color: #1e9e6e;
+}
+.covid-active {
+  background-color: #22a8a8;
+}
+.covid-serious {
+  background-color: #5a3d55;
+}
